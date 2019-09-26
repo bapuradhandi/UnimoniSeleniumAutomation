@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression Suite]">
+  <test thread-count="5" name="UITest(failed)">
+    <parameter name="case1" value="2"/>
+    <classes>
+      <class name="TestNG.TestngSeleniumExample">
+        <methods>
+          <include name="practiceSearch"/>
+        </methods>
+      </class> <!-- TestNG.TestngSeleniumExample -->
+    </classes>
+  </test> <!-- UITest(failed) -->
+</suite> <!-- Failed suite [Regression Suite] -->
