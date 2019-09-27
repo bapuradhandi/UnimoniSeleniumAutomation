@@ -7,7 +7,7 @@ import pages.HomepagePOM;
 public class HomePageTest {
 	
 	@Test
-	public void homePageTC() {
+	public void homePageTC() throws InterruptedException {
 		
 		HomepagePOM homepagePO = new HomepagePOM();
 		homepagePO.homePageTC();
@@ -18,4 +18,6 @@ public class HomePageTest {
 		
 	}
 
+
+	
 }

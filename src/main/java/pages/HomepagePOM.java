@@ -19,12 +19,14 @@ public class HomepagePOM {
 	@FindBy(name = "btnLogin") 
 	private WebElement loginButton;
 	
-	public void homePageTC() {
+	public void homePageTC() throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\\\UnimoniSeleniumAutomation\\\\drivers\\\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://demo.guru99.com/V4/index.php");
+		Thread.sleep(5000);
 		
+		System.out.println(driver.getTitle());
 		PageFactory.initElements(driver, this);	
 		
 	}
